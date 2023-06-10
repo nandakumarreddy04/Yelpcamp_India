@@ -33,12 +33,12 @@ mongoose.connect(process.env.DB_URL, {
   useUnifiedTopology: true,
   useCreateIndex: true,
   useNewUrlParser: true,
- 
+  useFindAndModify:false,
 });
 
 const app = express();
 const db = mongoose.connection;
-
+mongoose.set("useFindAndModify", false);
 
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
