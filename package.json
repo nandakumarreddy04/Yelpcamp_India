@@ -11,7 +11,7 @@
   "author": "Nanda Reddy",
   "license": "ISC",
   "dependencies": {
-    "@mapbox/mapbox-sdk": "^0.15.2",
+    "@mapbox/mapbox-sdk": "^0.13.0",
     "body-parser": "^1.19.0",
     "cloudinary": "^1.37.1",
     "connect-flash": "^0.1.1",
