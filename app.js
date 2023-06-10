@@ -38,7 +38,7 @@ mongoose.connect(process.env.DB_URL, {
 
 const app = express();
 const db = mongoose.connection;
-mongoose.set("useFindAndModify", false);
+
 
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
